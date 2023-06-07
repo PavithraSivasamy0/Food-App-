@@ -32,6 +32,17 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* replaced by not class */
+  /* margin-bottom: 9.6rem; */
+}
+
+/* replaced by not class */
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--center-v {
@@ -43,6 +54,10 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .heading-primary,
@@ -93,15 +108,39 @@ body {
   text-decoration: none;
   cursor: pointer;
   /* put the transition on original state  */
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
-.delivered-text span {
-  color: #cf711f;
-  font-weight: 700;
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
-.section-how div div {
-  padding: 100px;
-  font-size: 50px;
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #c67e22;
+}
+
+.list-item {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* helper classes */
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
