@@ -48,6 +48,7 @@ body {
 .grid--center-v {
   align-items: center;
 }
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -146,6 +147,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 *:focus {
@@ -154,6 +156,7 @@ body {
   outline-offset: 8px; */
   box-shadow: 0 0 0 0.8rem rgb(232, 135, 35, 0.5);
 }
+
 /* helper classes */
 
 .margin-bottom-md {

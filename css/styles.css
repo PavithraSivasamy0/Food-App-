@@ -52,7 +52,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -180,6 +180,7 @@
   font-size: 1.8rem;
   font-weight: 600;
 }
+
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
@@ -202,6 +203,7 @@
   margin-bottom: 2.4rem;
   color: #999;
 }
+
 .logos {
   display: flex;
   justify-content: space-around;
@@ -266,6 +268,7 @@
   background-color: #ffe3e3;
   z-index: -1;
 }
+
 .step-img {
   width: 35%;
 }
@@ -320,6 +323,7 @@
 .tag--paleo {
   background-color: #ffe066;
 }
+
 .meal-title {
   font-size: 2rem;
   color: #333;
@@ -340,11 +344,13 @@
   align-items: center;
   gap: 1.6rem;
 }
+
 .meal-icon {
   height: 2.4rem;
   width: 2.4rem;
   color: #c67e22;
 }
+
 .meal-img {
   width: 100%;
 }
@@ -396,12 +402,14 @@ strong {
   font-size: 1.6rem;
   color: #6f6f6f;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
+
 .gallery-item {
   overflow: hidden;
 }
@@ -473,6 +481,7 @@ strong {
   letter-spacing: 0.75;
   margin-bottom: 3.2rem;
 }
+
 .plan-price {
   font-size: 6.2rem;
   font-weight: 600;
@@ -485,6 +494,7 @@ strong {
   font-weight: 500;
   margin-right: 0.8rem;
 }
+
 .plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -495,6 +505,7 @@ strong {
   text-align: center;
   margin-top: 4.8rem;
 }
+
 .plan-details {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -517,6 +528,7 @@ strong {
   font-weight: 600;
   margin-bottom: 1.6rem;
 }
+
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
@@ -561,11 +573,9 @@ strong {
 }
 
 .cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(235, 150, 76, 0.3),
-      rgba(230, 125, 34, 0.3)
-    ),
+      rgba(230, 125, 34, 0.3)),
     url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
@@ -657,6 +667,7 @@ strong {
   color: #767676;
   margin-top: auto;
 }
+
 .social-links {
   list-style: none;
   display: flex;
@@ -669,6 +680,7 @@ strong {
   flex-direction: column;
   gap: 2.4rem;
 }
+
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
