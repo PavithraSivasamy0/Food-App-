@@ -4,6 +4,7 @@ html {
   /* % of user's browser font'size setting*/
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -19,6 +20,7 @@ body {
   line-height: 1;
   /* only works if nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+
 }
 
 /* *************************** */
