@@ -34,6 +34,27 @@ allLinks.forEach(function (link) {
   })
 })
 
+//sticky navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(function (entries) {
+  const ent = entries[0];
+  if (ent.isIntersecting === false) {
+    document.body.classList.add('sticky')
+  }
+  if (ent.isIntersecting) {
+    document.body.classList.remove('sticky')
+  }
+},
+  {
+    // in the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+  });
+observer.observe(sectionHeroEl);
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -54,6 +75,8 @@ checkFlexGap();
 
   // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
+
+  // For fixing flux gap in safari browsers
 /*
 .no-flexbox-gap .main-nav-list li:not(:last-child) {
   margin-right: 4.8rem;
